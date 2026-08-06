@@ -1,5 +1,5 @@
 :root {
-    --fhnw-yellow: #ffdd00;
+    --fhnw-yellow: #fde70e;
     --black: #000000;
     --dark-grey: #333333;
     --grey: #707070;
@@ -48,7 +48,7 @@ body {
 
 .fhnw-logo {
     display: block;
-    width: 290px;
+    width: 260px;
     max-width: 70%;
     height: auto;
 }
