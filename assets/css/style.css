@@ -1,0 +1,390 @@
+:root {
+    --fhnw-yellow: #ffdd00;
+    --black: #000000;
+    --dark-grey: #333333;
+    --grey: #707070;
+    --light-grey: #f5f5f5;
+    --border: #dddddd;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--white);
+    color: var(--black);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   FHNW Header
+================================ */
+
+.fhnw-header {
+    width: 100%;
+    background: var(--fhnw-yellow);
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 30px;
+}
+
+.fhnw-logo {
+    display: block;
+    width: 330px;
+    max-width: 70%;
+    height: auto;
+}
+
+
+/* ================================
+   Hauptbereich
+================================ */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 65px 30px 90px;
+}
+
+
+/* ================================
+   Titel
+================================ */
+
+.hero {
+    margin-bottom: 75px;
+}
+
+.project-type {
+    margin: 0 0 12px;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+
+    color: var(--grey);
+}
+
+h1 {
+    margin: 0;
+
+    max-width: 900px;
+
+    font-size: clamp(42px, 6vw, 68px);
+    line-height: 1.08;
+
+    letter-spacing: -0.035em;
+}
+
+.lead {
+    max-width: 820px;
+
+    margin: 28px 0 0;
+
+    font-size: 22px;
+    line-height: 1.55;
+
+    color: var(--dark-grey);
+}
+
+
+/* ================================
+   Sektionen
+================================ */
+
+section {
+    margin-bottom: 75px;
+}
+
+h2 {
+    margin: 0 0 25px;
+
+    padding-bottom: 10px;
+
+    font-size: 30px;
+    line-height: 1.2;
+
+    border-bottom: 4px solid var(--fhnw-yellow);
+}
+
+
+/* ================================
+   Projekt auf einen Blick
+================================ */
+
+.facts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.fact {
+    min-height: 145px;
+
+    padding: 25px 20px;
+
+    background: var(--light-grey);
+
+    border-bottom:
+        6px solid var(--fhnw-yellow);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fact-value {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 34px;
+    line-height: 1.1;
+
+    font-weight: 700;
+}
+
+.fact-label {
+    font-size: 16px;
+    color: var(--dark-grey);
+}
+
+
+/* ================================
+   Download
+================================ */
+
+.download-button {
+    display: inline-block;
+
+    margin-top: 12px;
+
+    padding: 13px 22px;
+
+    background: var(--fhnw-yellow);
+    color: var(--black);
+
+    border: 2px solid var(--fhnw-yellow);
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition: 0.15s ease;
+}
+
+.download-button:hover {
+    background: var(--black);
+    border-color: var(--black);
+    color: var(--white);
+}
+
+
+/* ================================
+   Quellen
+================================ */
+
+.sources {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    max-width: 900px;
+}
+
+.sources li {
+    padding: 15px 0;
+
+    border-bottom:
+        1px solid var(--border);
+}
+
+.sources li:last-child {
+    border-bottom: none;
+}
+
+
+/* ================================
+   Projektbeteiligte
+================================ */
+
+.people {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+.person {
+    padding: 24px;
+
+    background: var(--light-grey);
+
+    border-top:
+        5px solid var(--fhnw-yellow);
+}
+
+.person-title {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+
+    color: var(--grey);
+}
+
+.person strong {
+    display: block;
+
+    margin-bottom: 4px;
+
+    font-size: 19px;
+}
+
+.person span:last-child {
+    display: block;
+
+    color: var(--dark-grey);
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+footer {
+    background: var(--black);
+    color: var(--white);
+}
+
+.footer-content {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   Smartphone / QR-Code Besucher
+================================ */
+
+@media (max-width: 800px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    .header-content {
+        padding: 16px 22px;
+    }
+
+    .fhnw-logo {
+        width: 280px;
+    }
+
+    .container {
+        padding:
+            45px 22px
+            70px;
+    }
+
+    .hero {
+        margin-bottom: 55px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .lead {
+        font-size: 19px;
+    }
+
+    section {
+        margin-bottom: 55px;
+    }
+
+    .facts {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .people {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        padding: 22px;
+
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .fhnw-logo {
+        width: 245px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    .fact {
+        min-height: auto;
+    }
+
+    .download-button {
+        width: 100%;
+        text-align: center;
+    }
+}
