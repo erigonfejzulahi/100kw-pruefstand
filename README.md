@@ -32,8 +32,4 @@ Das Poster fasst die wichtigsten Punkte der Bachelorarbeit kompakt zusammen und 
 - Bachelorarbeit: Erigon Fejzulahi
 - Hochschule: FHNW – Hochschule für Technik
 - Institut: Institut für Elektrische Energietechnik (IEE)
-- Betreuung: Ishan Pendharkar, Tobias Strittmatter
-
-## Hinweis
-
-Diese Seite dient zur Präsentation der Bachelorarbeit und stellt eine kompakte Übersicht über das Projekt dar.
+- Betreuung: Prof. Dr. Ishan Pendharkar, Tobias Strittmatter
